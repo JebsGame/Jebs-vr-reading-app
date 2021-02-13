@@ -704,7 +704,7 @@
 										</Sound>
 									</ChildrenList>
 								</ActorMixer>
-								<ActorMixer Name="ButtonPresses" ID="{35E6BD19-55D3-4CAE-95E1-A99861E9F070}" ShortID="229223334">
+								<ActorMixer Name="ButtonsAndInterfaces" ID="{35E6BD19-55D3-4CAE-95E1-A99861E9F070}" ShortID="229223334">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
@@ -745,7 +745,7 @@
 											<PropertyList>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>2</Value>
+														<Value>3</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -768,6 +768,50 @@
 											</ChildrenList>
 											<ActiveSourceList>
 												<ActiveSource Name="SFX_ButtonPress_Bad" ID="{35613C2C-9DD2-4CB2-ADC0-F5680322BC16}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_InterfaceOff_01" ID="{22581D98-F671-46B3-B8A8-6FE336CF4C00}" ShortID="270187420">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_InterfaceOff_01" ID="{D78011C5-0946-474C-BAE3-FDD9B8EB2C32}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_InterfaceOff_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="570298170"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_InterfaceOff_01" ID="{D78011C5-0946-474C-BAE3-FDD9B8EB2C32}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_InterfaceOn_01" ID="{CAA64D18-0C12-4A11-B8BE-98D8CD1EBE2D}" ShortID="546692776">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_InterfaceOn_01" ID="{1BD3B210-3BD2-4218-804D-DC16A9CE5339}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_InterfaceOn_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1038696750"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_InterfaceOn_01" ID="{1BD3B210-3BD2-4218-804D-DC16A9CE5339}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
