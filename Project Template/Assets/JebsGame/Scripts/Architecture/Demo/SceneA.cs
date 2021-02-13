@@ -1,12 +1,12 @@
-﻿using JebsReadingGame.System.Currency;
-using JebsReadingGame.System.Gamemode;
+﻿using JebsReadingGame.Systems.Currency;
+using JebsReadingGame.Systems.Gamemode;
 using JebsReadingGame.Notifiers;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using JebsReadingGame.System.Scene;
+using JebsReadingGame.Systems.Scene;
 
 public class SceneA : MonoBehaviour
 {
@@ -19,11 +19,13 @@ public class SceneA : MonoBehaviour
 
     public int coinsToChangeScene = 50;
 
+    public string nextScene = "SceneB";
+
     int hits = 0;
     
     void Start()
     {
-        triggerNotifier.onEnterCollider.AddListener(OnHit);
+        //triggerNotifier.onEnterCollider.AddListener(OnHit);
         CurrencyView.singleton.onCoinsEarned.AddListener(OnCoinsEarned);
 
         coinsPanel.UpdateCoinsCounter();
@@ -35,6 +37,7 @@ public class SceneA : MonoBehaviour
         {
             hits++;
 
+            /*
             if (hits == GamemodeView.singleton.viewModel.streakLength)
             {
                 GamemodeView.singleton.onPositiveStreakCompleted.Invoke();
@@ -43,8 +46,9 @@ public class SceneA : MonoBehaviour
 
                 // Check scene change
                 if (CurrencyView.singleton.viewModel.totalCoins >= coinsToChangeScene)
-                    GamemodeView.singleton.onSceneChangeRequest.Invoke(GamemodeView.singleton.viewModel.availableScenes[0]);
+                    GamemodeView.singleton.onSceneChangeRequest.Invoke(nextScene);
             }
+            */
         }
     }
 

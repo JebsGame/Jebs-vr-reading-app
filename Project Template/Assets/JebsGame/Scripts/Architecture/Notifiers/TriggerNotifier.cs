@@ -11,6 +11,7 @@ namespace JebsReadingGame.Notifiers
     [RequireComponent(typeof(Collider))]
     public class TriggerNotifier : MonoBehaviour
     {
+        /*
         [Header("Colliders")]
         [SerializeField]
         public ColliderEvent onEnterCollider;
@@ -111,6 +112,6 @@ namespace JebsReadingGame.Notifiers
                 }
             }
         }
-
+        */
     }
 }

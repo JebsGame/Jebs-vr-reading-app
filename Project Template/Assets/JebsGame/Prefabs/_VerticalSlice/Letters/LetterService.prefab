@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7594659701179569698
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7594659701179569699}
+  - component: {fileID: 7594659701179569700}
+  m_Layer: 0
+  m_Name: LetterService
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7594659701179569699
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7594659701179569698}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7594659701179569700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7594659701179569698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03159ef285398fd46a2b5ff6c2b360d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fonts:
+  - asset: {fileID: 11400000, guid: bebc693f25eef1a42ad995c456e87fac, type: 2}
+    fontSizeOffset: -1.5
+  - asset: {fileID: 11400000, guid: 028e30d97fe27e44db736ca1fdc5d756, type: 2}
+    fontSizeOffset: 1
+  - asset: {fileID: 11400000, guid: 0de921913312a924797929d0cd2fec79, type: 2}
+    fontSizeOffset: 0
+  - asset: {fileID: 11400000, guid: 8bf5bfb376abf204a9fb1f17ee109038, type: 2}
+    fontSizeOffset: 2
+  - asset: {fileID: 11400000, guid: cecb11da23d4f3b4c85cccf7eac81952, type: 2}
+    fontSizeOffset: 0
+  - asset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+    fontSizeOffset: 0
+  playerHead: {fileID: 0}
+  letterPrefab: {fileID: 5788260307368115057, guid: 760260a0211673a4a8f7c924585d3eff,
+    type: 3}

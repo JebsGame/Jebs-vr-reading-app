@@ -16,6 +16,11 @@ public class ImageFiller : MonoBehaviour
         image.fillAmount = currentFill;
     }
 
+    public void SetInstantFillAmount(float fillAmount)
+    {
+        image.fillAmount = fillAmount;
+    }
+
     public void SetFillAmount(float fillAmount)
     {
         StopAllCoroutines();

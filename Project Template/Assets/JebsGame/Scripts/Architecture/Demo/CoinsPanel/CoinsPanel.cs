@@ -1,4 +1,4 @@
-﻿using JebsReadingGame.System.Currency;
+﻿using JebsReadingGame.Systems.Currency;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;

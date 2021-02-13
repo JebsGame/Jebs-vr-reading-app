@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using UnityEngine.Events;
+using JebsReadingGame.Games.Chests;
 
 public class CrabFactory : MonoBehaviour
 {
@@ -12,8 +13,8 @@ public class CrabFactory : MonoBehaviour
     public float crabsSpeed = 2.0f;
     public float speedIncrease = 0.25f;
 
-    public List<CrabBrain> crabs = new List<CrabBrain>();
-    public List<CrabHome> homes = new List<CrabHome>();
+    public List<Crab> crabs = new List<Crab>();
+    public List<Home> homes = new List<Home>();
 
     public GameObject crabPrefab;
 
@@ -51,13 +52,13 @@ public class CrabFactory : MonoBehaviour
         {
             int doorNumber = Random.Range(0, homes.Count);
 
-            CrabHome spawnPoint = homes[doorNumber];
+            Home spawnPoint = homes[doorNumber];
             GameObject newBornCrab = Instantiate(crabPrefab,spawnPoint.transform.position,Quaternion.identity);
             newBornCrab.transform.parent = transform;
-            CrabBrain smolBrain = newBornCrab.GetComponent<CrabBrain>();
+            Crab smolBrain = newBornCrab.GetComponent<Crab>();
             crabs.Add(smolBrain);
 
-            List<CrabHome> availableNewDestinations = new List<CrabHome>(homes);
+            List<Home> availableNewDestinations = new List<Home>(homes);
 
             availableNewDestinations.RemoveAt(doorNumber);
 
@@ -66,7 +67,7 @@ public class CrabFactory : MonoBehaviour
             smolBrain.homeDestination = homes[doorNumber];
 
             if (Random.value < chestProbability)
-                smolBrain.CarryChest();
+                smolBrain.hasChest = true;
         }
     }
 
